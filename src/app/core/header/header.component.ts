@@ -12,7 +12,7 @@ import {Router} from '@angular/router';
 })
 export class HeaderComponent {
   constructor(private dataStorageService: DataStorageService,
-              private authService: AuthService,
+              public authService: AuthService,
               private router: Router) {
   }
 
@@ -32,6 +32,10 @@ export class HeaderComponent {
   onLogout() {
     this.authService.logout();
     this.router.navigate(['/signin']);
+  }
+
+  isAuthenticated() {
+    return this.authService.isAuthenticated();
   }
 
 }
