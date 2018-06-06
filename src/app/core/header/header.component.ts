@@ -1,8 +1,8 @@
 import {Component, Injectable} from '@angular/core';
 import {Response} from '@angular/http';
 
-import {DataStorageService} from '../shared/data-storage.service';
-import {AuthService} from '../auth/auth.service';
+import {DataStorageService} from '../../shared/data-storage.service';
+import {AuthService} from '../../auth/auth.service';
 import {Router} from '@angular/router';
 
 @Injectable()
